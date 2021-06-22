@@ -1,5 +1,6 @@
 /*
     ===== Código de TypeScript =====
+    Tipos básicos y conceptos generales
 */
 let first_name: string = "Josué"; //declarar una variable
 const value = "2021"; //valor constante
