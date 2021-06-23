@@ -2,7 +2,7 @@
     ===== Código de TypeScript =====
 */
 //Desestructuración de argumentos en una función
-interface Product {
+export interface Product {
   description: string;
   price: number;
 }
@@ -18,7 +18,7 @@ const tablet: Product = {
 };
 
 //Calcular el impuesto sobre venta
-function calculateISV(products: Product[]): [number, number] {
+export function calculateISV(products: Product[]): [number, number] {
   let total = 0; //no es constante porque más adelante se lo va a cambiar
   //el foreach tiene como parametros a cada elemento del array, el index y al arreglo completo (products)
   products.forEach(({ price }) => {
@@ -28,11 +28,11 @@ function calculateISV(products: Product[]): [number, number] {
   return [total, total * 0.15];
 }
 
-const articules: Product[] = [phone, tablet];
+/*const articules: Product[] = [phone, tablet];
 
 //const isv = calculateISV(articules);
 
 const [total, isv] = calculateISV(articules);
 
 console.log("Total:", total);
-console.log("ISV:", isv);
+console.log("ISV:", isv);*/
